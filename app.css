@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  font-family: "Mali", serif;
+
+}
+body{
+    background:#f78da4;
+    height: 100vh;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .custom-card {
+    min-height: 250px; /* ลดความสูงการ์ดสำหรับหน้าจอขนาดเล็ก */
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-card {
+    min-height: 200px; /* ลดความสูงการ์ดเพิ่มเติมสำหรับมือถือ */
+  }
+}
+
+#topic{
+  color: rgb(252, 252, 252);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.custom-card {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+  .card {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+  }
+  .progress {
+    height: 5px;
+    margin: 10px 0;
+  }
+  .time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+
+  .gift > img{
+    height: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    .swiper {
+      height: 300px; /* ลดความสูงสำหรับหน้าจอเล็ก */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .swiper {
+      min-height: 200px; /* ลดความสูงการ์ดเพิ่มเติมสำหรับมือถือ */
+    }
+  }
+  .swiper {
+    width: 100%;
+    max-width: 800px; /* ขนาดสูงสุดของ Carousel */
+    height: 400px; /* ความสูง */
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* มุมโค้งมน */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+
+
